@@ -4,14 +4,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'crud',
+    path: 'CRUD',
     loadChildren: () =>
       import('./entities/crud/crud.module').then((m) => m.crudModule),
   },
   {
     path: 'login',
     loadChildren: () =>
-      import('./entities/crud/crud.module').then((m) => m.crudModule),
+      import('./pages/login/login.module').then((m) => m.LoginModule),
   },
   {
     path: '',

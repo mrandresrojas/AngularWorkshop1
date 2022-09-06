@@ -1,7 +1,27 @@
-<ul>
-<li><a routerLink="welcome">inicio</a></li>
-<li><a routerLink="CRUD">CRUD</a></li>
-<li><a routerLink="login">Login</a></li>
 
-</ul>
+  
+  <p>
+    <mat-toolbar color="primary">
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>home</mat-icon>
+              <span routerLink="welcome">inicio</span>
+            </button>
+            <button mat-menu-item >
+              <mat-icon>menu</mat-icon>
+              <span routerLink="CRUD">CRUD</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>login</mat-icon>
+              <span routerLink="login">Login</span>
+            </button>
+          </mat-menu>
+      <span>CRUD App</span>
+     
+    </mat-toolbar>
+  </p>
 <router-outlet></router-outlet>
+
