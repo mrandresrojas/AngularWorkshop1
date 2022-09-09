@@ -8,11 +8,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
 import {MaterialModule} from '../material.module';
+import { InputDataComponentComponent } from './shared/input-data-component/input-data-component.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, InputDataComponentComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

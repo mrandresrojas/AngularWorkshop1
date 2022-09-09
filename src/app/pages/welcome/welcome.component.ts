@@ -1,3 +1,4 @@
+import { WelcomeService } from './welcome.service';
 import { Component, NgModule, OnInit } from '@angular/core';
 
 @Component({
@@ -16,5 +17,9 @@ export class WelcomeComponent implements OnInit {
     this.subtitle = 'Software Dev';
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+
+}
+
 }
