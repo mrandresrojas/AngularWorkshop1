@@ -2,11 +2,19 @@
   "my_data": [
     {
       "name": "Carlos Andres Rojas Jimenez",
-      "edad": "26",
+      "age": "26",
       "is": "CARJ1",
-      "Ciudad": "Bogotá",
-      "Estado": "Cundinamarca",
-      "Hobbie": "Leer comics"
+      "city": "Bogotá",
+      "state": "Cundinamarca",
+      "hobbie": "Leer comics"
+    },
+    {
+      "name": "David Ricardo Polo Bello",
+      "age": "24",
+      "is": "DRPB",
+      "city": "Bogotá",
+      "state": "Cundinamarca",
+      "hobbie": "Picar Costillas"
     }
   ]
 }

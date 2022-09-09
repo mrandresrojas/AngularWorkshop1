@@ -1,7 +1,7 @@
 
   
   <p>
-    <mat-toolbar color="primary">
+    <mat-toolbar *ngIf="isAutheticated()"  color="primary">
         <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
             <mat-icon>more_vert</mat-icon>
           </button>
@@ -17,6 +17,10 @@
             <button mat-menu-item>
               <mat-icon>login</mat-icon>
               <span routerLink="login">Login</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>login</mat-icon>
+              <span (click)="logout()">Login</span>
             </button>
           </mat-menu>
       <span>CRUD App</span>
